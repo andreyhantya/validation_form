@@ -25,6 +25,7 @@
 .form__title {
     text-align: center;
     font-weight: normal;
+    color: #6d6d6d;
 }
 
 .form__input {
@@ -60,7 +61,7 @@
     transition-duration: 1s;
 }
 
-.button{
+.button {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -80,4 +81,66 @@
 .form__button:hover {
     background-color: #0098f0;
     transition: 1s;
+}
+
+/*Модальное окно*/
+@keyframes vis {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes hidd {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes visInfo {
+    0% {
+        left: -100px;
+        opacity: 0.4;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    animation: vis 0.4s;
+}
+
+.modal__info {
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    margin: 100px auto;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    animation: visInfo 0.5s;
+}
+
+.modal__info_close {
+    display: inline-block;
+    font-size: 25px;
+    position: absolute;
+    cursor: pointer;
+    margin: 5px 10px;
+    right: 0;
+    top: 0;
 }

@@ -34,3 +34,24 @@ for (let input of inputs) {
         }
     })
 }
+
+
+let test;
+const showModal = () => {
+    let check = [];
+    let inputs = document.querySelectorAll('input[data-rule]');
+
+    for (let input of inputs) {
+        input.classList == 'form__input valid' ? check.push(true) : check.push(false);
+    }
+    if (check.every(item => item === true)) {
+        document.querySelector('.modal').style.display = 'block';
+        document.querySelector('.modal').style.opacity = 1;
+
+    }
+}
+
+const closeModal = () => {
+    document.querySelector('.modal').style.opacity = '0';
+    document.querySelector('.modal').style.display = 'none';
+}
