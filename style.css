@@ -1,6 +1,5 @@
 .form {
     width: 400px;
-    height: 300px;
     border: 1px solid #cbcbcb;
     margin: 0 auto;
     font-family: sans-serif;
@@ -39,7 +38,7 @@
     border: 1px solid #e9e9e9;
 }
 
-.form__input:focus{
+.form__input:focus {
     border-bottom: 2px solid #ccc;
 }
 
@@ -73,18 +72,24 @@
     animation: invalid 0.5s;
 }
 
-.form__button{
+.button{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.form__button {
     background-color: #0071f0;
     color: white;
     font-weight: bold;
     outline: none;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 8px;
     cursor: pointer;
-    padding: 1rem;
+    padding: 10px 30px;
     transition: 0.3s;
 }
 
-.form__button:hover{
+.form__button:hover {
     background-color: #0098f0;
 }
