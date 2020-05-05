@@ -36,7 +36,6 @@ for (let input of inputs) {
 }
 
 
-let test;
 const showModal = () => {
     let check = [];
     let inputs = document.querySelectorAll('input[data-rule]');
