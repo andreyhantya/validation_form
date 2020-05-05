@@ -39,21 +39,10 @@
 }
 
 .form__input:focus {
-    border-bottom: 2px solid #ccc;
+    background-color: #ccc;
+    transition: 0.5s;
 }
 
-
-@keyframes invalid {
-    0% {
-        transform: rotate(2deg)
-    }
-    50% {
-        transform: rotate(-2deg)
-    }
-    100% {
-        background-color: rgba(229, 178, 178, 0.88);
-    }
-}
 
 .valid {
     border: 1px solid rgba(0, 128, 0, 0.58);
@@ -69,7 +58,6 @@
     box-shadow: 0 0 4px 0 #973434;
     color: indianred;
     transition-duration: 1s;
-    animation: invalid 0.5s;
 }
 
 .button{
@@ -87,9 +75,9 @@
     border-radius: 8px;
     cursor: pointer;
     padding: 10px 30px;
-    transition: 0.3s;
 }
 
 .form__button:hover {
     background-color: #0098f0;
+    transition: 1s;
 }
