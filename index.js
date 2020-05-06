@@ -7,14 +7,12 @@ const regulars = {
 
 for (let input of inputs) {
     input.addEventListener('blur', function () {
-        console.log(this.dataset.rule);
         let rule = this.dataset.rule;
         let value = this.value;
         let check;
         switch (rule) {
             case 'number':
                 check = regulars.number.test(value);
-                console.log(check);
                 break;
             case 'email':
                 check = regulars.email.test(value);
